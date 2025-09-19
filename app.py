@@ -62,8 +62,8 @@ workflow.add_edge("extract_report", END)
 
 langfuse_handler = CallbackHandler()
 
-app = workflow.compile().with_config({"callbacks": [langfuse_handler]})
-# app = workflow.compile()
+# app = workflow.compile().with_config({"callbacks": [langfuse_handler]})
+app = workflow.compile()
 
 
 # ----- USING LANGGRAPH SERVER 
